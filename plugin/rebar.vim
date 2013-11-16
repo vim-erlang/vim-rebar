@@ -17,4 +17,4 @@ endif
 let g:loaded_rebar = 1
 
 command! -bang -nargs=* -complete=custom,rebar#complete Rebar
-            \ echo rebar#dispatch(expand('<bang>'), [<f-args>])
+            \ call rebar#dispatch(expand('<bang>'), [<f-args>])
